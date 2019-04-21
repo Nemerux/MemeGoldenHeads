@@ -1,0 +1,8 @@
+name: MemeGoldenHeads
+version: 1.0
+main: pl.memexurer.goldenheads.MemeGoldenHeads
+commands:
+  goldenheads:
+    description: Przeladuj plugin
+    usage: /goldenheads
+    aliases: [goldenheads, gh]

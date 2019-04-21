@@ -1,0 +1,35 @@
+## Najlepszy POLSKI plugin na złote główki (chyba)
+
+# Typ glowki. Dostepne typy:
+# - RIGHT_CLICK - od razu dostajesz efekty kiedy klikniesz na glowke
+# - EAT - musisz zjesc glowke aby otrzymac efekty
+head_type: EAT
+
+# Efekty glowki. Lista efektow: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
+head_effects:
+  - "SPEED 2 15" # speed 2 na 80 sekund
+  - "REGENERATION 2 20" # regeneracja 2 na 20 sekund
+
+# Co ile mozesz zjadac glowki? Uzyj 0 aby wylaczyc
+head_delay: 500
+
+# Crafting glowki
+head_crafting:
+  - "GOLD_INGOT"
+  - "GOLD_INGOT"
+  - "GOLD_INGOT"
+  - "GOLD_INGOT"             # G G G
+  - "SKULL_ITEM"             # G S G
+  - "GOLD_INGOT"             # G G G
+  - "GOLD_INGOT"
+  - "GOLD_INGOT"
+  - "GOLD_INGOT"
+
+# Czy ma dawac glowki kiedy zabije sie gracza?
+auto_give_skulls: true
+
+# Item glowki
+head:
+  material: "GOLDEN_APPLE"
+  name: "&6Zlota glowka"
+  lore: "&8\u00BB &7Zjedz glowke aby otrzymac doobre efekty!"
