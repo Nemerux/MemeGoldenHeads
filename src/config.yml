@@ -7,11 +7,12 @@ head_type: EAT
 
 # Efekty glowki. Lista efektow: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/potion/PotionEffectType.html
 head_effects:
-  - "SPEED 2 15" # speed 2 na 80 sekund
-  - "REGENERATION 2 20" # regeneracja 2 na 20 sekund
-
+  - "SPEED 1 15" # speed 2 na 80 sekund
+  - "REGENERATION 1 10" # regeneracja 2 na 20 sekund
+  - "ABSORPTION 1 120" # absorbcja 2 na 2 minuty
+  - "DAMAGE_RESISTANCE 1 50" # resistance 2 na 50 sekund
 # Co ile mozesz zjadac glowki? Uzyj 0 aby wylaczyc
-head_delay: 500
+head_delay: 90
 
 # Crafting glowki
 head_crafting:

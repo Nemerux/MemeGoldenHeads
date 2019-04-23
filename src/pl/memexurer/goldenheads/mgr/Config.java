@@ -1,6 +1,5 @@
 package pl.memexurer.goldenheads.mgr;
 
-import org.bukkit.Effect;
 import org.bukkit.Material;
 import org.bukkit.configuration.Configuration;
 import org.bukkit.inventory.ItemStack;
@@ -8,7 +7,6 @@ import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
-import pl.memexurer.goldenheads.MemeGoldenHeads;
 import pl.memexurer.goldenheads.util.Color;
 
 import java.util.ArrayList;
@@ -34,7 +32,7 @@ public class Config {
          PotionEffectType effect = PotionEffectType.getByName(split[0]);
          int strength = Integer.parseInt(split[1]);
          int time = Integer.parseInt(split[2]);
-         effects.add(new PotionEffect(effect, time, strength));
+         effects.add(new PotionEffect(effect, time * 20, strength));
         }
 return effects;
     }
@@ -65,7 +63,7 @@ return effects;
     public ShapedRecipe getRecipe() {
         ShapedRecipe s = new ShapedRecipe(getHeadItem());
         List<String> materials = config.getStringList("head_crafting");
-        s.shape("1","2","3","4","5","6","7","8","9");
+        s.shape("123","456", "789");
         String numbers = "123456789";
         for(int i = 0; i < 9;i++) {
             s.setIngredient(numbers.charAt(i), Material.getMaterial(materials.get(i)));
