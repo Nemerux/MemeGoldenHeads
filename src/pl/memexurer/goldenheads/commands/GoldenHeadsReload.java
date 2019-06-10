@@ -1,5 +1,6 @@
 package pl.memexurer.goldenheads.commands;
 
+import net.dzikoysk.funnyguilds.FunnyGuilds;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;

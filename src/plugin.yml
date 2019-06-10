@@ -1,6 +1,7 @@
 name: AshMcGoldenHeads
 version: 1.0
 main: pl.memexurer.goldenheads.MemeGoldenHeads
+softdepend: [FunnyGuilds]
 commands:
   goldenheads:
     description: Przeladuj plugin

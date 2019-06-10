@@ -5,6 +5,7 @@ import org.bukkit.configuration.Configuration;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.inventory.meta.ItemMeta;
+import org.bukkit.material.MaterialData;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import pl.memexurer.goldenheads.util.Color;
@@ -66,8 +67,14 @@ return effects;
         s.shape("123","456", "789");
         String numbers = "123456789";
         for(int i = 0; i < 9;i++) {
+            if(materials.get(i).equalsIgnoreCase("GLOWKA")) {
+                MaterialData d = new MaterialData(Material.SKULL_ITEM, (byte) 3);
+                s.setIngredient(numbers.charAt(i), d);
+                        continue;
+            }
             s.setIngredient(numbers.charAt(i), Material.getMaterial(materials.get(i)));
         }
         return s;
     }
+    public boolean fgAntiSkulls() { return config.getBoolean("fg_anti_skulls"); }
 }

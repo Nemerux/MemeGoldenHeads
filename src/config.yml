@@ -14,13 +14,13 @@ head_effects:
 # Co ile mozesz zjadac glowki? Uzyj 0 aby wylaczyc
 head_delay: 90
 
-# Crafting glowki
+# Crafting glowki. Uzyj GLOWKA aby uzyc glowki
 head_crafting:
   - "GOLD_INGOT"
   - "GOLD_INGOT"
   - "GOLD_INGOT"
   - "GOLD_INGOT"             # G G G
-  - "SKULL_ITEM"             # G S G
+  - "GLOWKA"             # G S G
   - "GOLD_INGOT"             # G G G
   - "GOLD_INGOT"
   - "GOLD_INGOT"
@@ -28,6 +28,11 @@ head_crafting:
 
 # Czy ma dawac glowki kiedy zabije sie gracza?
 auto_give_skulls: true
+
+# Czy jak gracz z gildi zabije gracza z gildi to ma dawac glowke? XD
+# Wymagane funnyguilds.
+
+fg_anti_skulls: true
 
 # Item glowki
 head:
