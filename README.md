@@ -16,4 +16,4 @@ w configu mozecie zmienic:
 - ustawianie url glowki ( texture )
 
 ## Download
-[klik](MemeGoldenHeads/releases)
+[klik](https://github.com/Nemerux/MemeGoldenHeads/releases)
