@@ -9,3 +9,7 @@ w configu mozecie zmienic:
 - tryb jedzenia glowki: zjadanie jako jablko, klikanie prawym glowki
 - ustawienie itemu glowki oraz nazwy
 - zmienianie delayu ( przerwy ) pomiedzy jedzeniem nastepnej glowki
+- ustawienie wypadania glowek z graczy
+- blokada wypadania glowek ( jesli gracz zostanie zabity przez gracza z ktorym jest w gildi , glowka nie wypada )
+- zmienianie wiadomosci
+- ustawianie url glowki ( texture )
