@@ -14,3 +14,6 @@ w configu mozecie zmienic:
 - blokada wypadania glowek ( jesli gracz zostanie zabity przez gracza z ktorym jest w gildi , glowka nie wypada )
 - zmienianie wiadomosci
 - ustawianie url glowki ( texture )
+
+## Download
+[klik](MemeGoldenHeads/releases)
