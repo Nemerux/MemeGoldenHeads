@@ -1,7 +1,7 @@
 # MemeGoldenHeads - plugin na zlote glowki
 
-## Chyba najlepszy polski plugin na zlote glowki
-## edit: juz nie najlepszy, jakis koles z derpmc zrobil lepszy
+Chyba najlepszy plugin na zlote glowki
+edit: jakis typ z derpmc zrobil lepszy
 
 plugin mial byc zrobiony dla ashmc, ale nie chcieli XD
 w configu mozecie zmienic:
