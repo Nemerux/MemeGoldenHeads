@@ -34,6 +34,9 @@ auto_give_skulls: true
 
 fg_anti_skulls: true
 
+# Url glowki.
+head_url: "http://textures.minecraft.net/texture/69fd108ccfa61999693e1251a9c6a53f393849b91fda9eae926d89942ab0df"
+
 # Item glowki
 head:
   material: "GOLDEN_APPLE"

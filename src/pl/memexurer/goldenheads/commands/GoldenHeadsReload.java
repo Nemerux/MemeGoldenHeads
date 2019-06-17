@@ -16,7 +16,6 @@ public class GoldenHeadsReload implements CommandExecutor {
             MemeGoldenHeads.getProvidingPlugin(MemeGoldenHeads.class).onEnable();
             commandSender.sendMessage(ChatColor.GREEN + "Config pluginu zostal przeladowany!");
         }
-
         return true;
     }
 }

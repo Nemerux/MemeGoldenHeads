@@ -9,8 +9,10 @@ import org.bukkit.material.MaterialData;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 import pl.memexurer.goldenheads.util.Color;
+import pl.memexurer.goldenheads.util.HeadTexture;
 
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.List;
 
 public class Config {
@@ -45,11 +47,13 @@ return effects;
         for(String s: config.getStringList("head.lore")) {
             lore.add(Color.color(s));
         }
+
         ItemStack item = new ItemStack(material, 1);
         ItemMeta itemmeta = item.getItemMeta();
         itemmeta.setDisplayName(name);
         itemmeta.setLore(lore);
         item.setItemMeta(itemmeta);
+        if(item.getType().equals(Material.SKULL_ITEM)) return HeadTexture.setHeadTexture(getHeadUrlBase64(), item);
         return item;
     }
 
@@ -77,4 +81,8 @@ return effects;
         return s;
     }
     public boolean fgAntiSkulls() { return config.getBoolean("fg_anti_skulls"); }
+
+    public String getHeadUrlBase64() {
+      return Base64.getEncoder().encodeToString(String.format("{\"textures\":{\"SKIN\":{\"url\":\"%s\"}}}", config.getString("head_url")).getBytes());
+    }
 }
